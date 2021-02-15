@@ -1,0 +1,1 @@
+web: gunicorn contatinhosapi.wsgi

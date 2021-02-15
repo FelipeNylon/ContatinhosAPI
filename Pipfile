@@ -9,6 +9,8 @@ djangorestframework = "*"
 pyjwt = "*"
 pillow = "*"
 drf-yasg = "*"
+django-heroku = "*"
+gunicorn = "*"
 
 [dev-packages]
 
