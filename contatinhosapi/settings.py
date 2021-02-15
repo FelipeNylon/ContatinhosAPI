@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-from var import *
 import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -141,7 +140,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-JWT_SECRET_KEY= os.environ["JWT_SECRET_KEY"] 
+JWT_SECRET_KEY= str(os.environ.get('JWT_SECRET_KEY'))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
